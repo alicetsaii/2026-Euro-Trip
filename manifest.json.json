@@ -1,0 +1,11 @@
+{
+  "name": "Trip Planner",
+  "short_name": "MyTrip",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff6b00",
+  "icons": [
+    { "src": "icon.png", "sizes": "192x192", "type": "image/png" }
+  ]
+}
