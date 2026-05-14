@@ -1,1 +1,1 @@
-# 2026-Euro-Trip
+# 2026 Euro Trip
