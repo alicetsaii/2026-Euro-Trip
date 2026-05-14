@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026歐洲行程</title>
 
-    <!-- 加入以下縮圖設定 -->
+    <!-- 縮圖設定 -->
     <meta property="og:title" content="我的 2026 歐洲賽事行程">
     <meta property="og:description" content="包含 6/8 出發、IPF 比賽及各城市住宿航班資訊">
     <meta property="og:image" content="https://alicetsaii.github.io/2026-Euro-Trip/og-image.png">
@@ -25,26 +25,19 @@
             --accent-green: #28a745;  /* 活動/比賽 */
         }
         body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); margin: 0; color: var(--text); line-height: 1.5; }
-        
-        /* 日期橫向導覽 */
         .nav-scroll { display: flex; overflow-x: auto; background: #fff; padding: 15px; gap: 10px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         .nav-item { min-width: 65px; text-align: center; padding: 8px; border-radius: 12px; background: #f1f3f5; font-size: 13px; cursor: pointer; border: none; }
         .nav-item.active { background: #343a40; color: #fff; font-weight: bold; }
-
-        /* 行程容器 */
         .content { padding: 15px; }
         .day-section { display: none; }
         .day-section.active { display: block; }
         .day-header { font-size: 20px; font-weight: bold; margin-bottom: 15px; border-bottom: 2px solid #dee2e6; padding-bottom: 5px; }
-
-        /* 卡片設計 */
         .card { background: var(--card); border-radius: 16px; padding: 18px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); position: relative; overflow: hidden; }
         .card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; }
         .type-transport::before { background: var(--accent-orange); }
         .type-flight::before { background: var(--accent-blue); }
         .type-accom::before { background: var(--accent-purple); }
         .type-event::before { background: var(--accent-green); }
-
         .time-tag { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
         .time { font-size: 16px; font-weight: 700; }
         .badge { font-size: 11px; padding: 3px 8px; border-radius: 50px; font-weight: bold; text-transform: uppercase; }
@@ -52,7 +45,6 @@
         .badge-flight { background: #e7f1ff; color: var(--accent-blue); }
         .badge-accom { background: #f3f0ff; color: var(--accent-purple); }
         .badge-event { background: #e6ffed; color: var(--accent-green); }
-
         .title { font-size: 17px; font-weight: bold; margin-bottom: 4px; }
         .address { font-size: 14px; color: var(--sub-text); margin-bottom: 8px; display: flex; align-items: flex-start; gap: 5px; }
         .detail { font-size: 13px; color: #495057; background: #f8f9fa; padding: 10px; border-radius: 8px; }
@@ -76,7 +68,7 @@
 <div class="content">
     <!-- 6/08 -->
     <div id="d608" class="day-section active">
-        <div class="day-header">6月8日 (週一)啟程 ✈️</div>
+        <div class="day-header">6月8日 (週一) 啟程 ✈️</div>
         <div class="card type-transport">
             <div class="time-tag"><span class="time">15:00</span><span class="badge badge-transport">機場接送</span></div>
             <div class="title">送機前往 桃園機場 T2</div>
@@ -92,7 +84,7 @@
 
     <!-- 6/09 -->
     <div id="d609" class="day-section">
-        <div class="day-header">6月9日 (週二)抵達歐洲🛬</div>
+        <div class="day-header">6月9日 (週二) 抵達歐洲 🛬</div>
         <div class="card type-flight">
             <div class="time-tag"><span class="time">07:50</span><span class="badge badge-flight">航班 TK1407</span></div>
             <div class="title">伊斯坦堡 (IST) → 維爾紐斯 (Vilnius, VNO)</div>
@@ -104,70 +96,41 @@
             <div class="address">Birželio 23-iosios gatvė 9</div>
             <div class="detail">房東：Nerijus | 退房：6/11 11:00</div>
         </div>
-                <!-- 6/9 健身房實用小撇步 -->
         <div class="card type-event">
-            <div class="time-tag">
-                <span class="time">💡 實用小撇步</span>
-                <span class="badge badge-event">Tips</span>
-            </div>
+            <div class="time-tag"><span class="time">💡 實用小撇步</span><span class="badge badge-event">Tips</span></div>
             <div class="title">健身房入場與訓練建議</div>
             <div class="detail">
-                <p><strong>1. APP 快速購買：</strong> 許多立陶宛健身房（如 Leofita, MyFitness）可透過 <strong>TrainAway APP</strong> 直接購買單次票，省去臨櫃填寫資料的時間。</p>
-                <p><strong>2. IPF 賽前首選：</strong> 維爾紐斯的 <strong>Leofita Gym</strong> 器材風格較硬派且自由重量充足，最符合力量舉選手的賽前訓練需求。</p>
-                <p><strong>3. 善用免費體驗：</strong> <strong>Gym+</strong> 與 <strong>Lemon Gym</strong> 常提供「首次免費體驗」，建議先在官網註冊，對短期旅遊非常划算。</p>
+                <p><strong>1. APP 快速購買：</strong> 許多立陶宛健身房可透過 <strong>TrainAway APP</strong> 直接購買單次票。</p>
+                <p><strong>2. IPF 賽前首選：</strong> 維爾紐斯的 <strong>Leofita Gym</strong> 器材風格硬派，最符合力量舉需求。</p>
+                <p><strong>3. 善用免費體驗：</strong> <strong>Gym+</strong> 與 <strong>Lemon Gym</strong> 常提供首次免費體驗。</p>
             </div>
         </div>
     </div>
-    </div>
 
-    
-                <!-- 6/11 -->
+    <!-- 6/11 -->
     <div id="d611" class="day-section">
-        <div class="day-header">6月11日 (週四)移動到比賽城市🌆</div>
-        
-        <!-- 移動與入住 -->
+        <div class="day-header">6月11日 (週四) 移動到比賽城市 🌆</div>
         <div class="card type-event">
-            <div class="time-tag">
-                <span class="time">移動日</span>
-                <span class="badge badge-event">前往 Druskininkai</span>
-            </div>
+            <div class="time-tag"><span class="time">移動日</span><span class="badge badge-event">前往 Druskininkai</span></div>
             <div class="title">入住 IPF 選手旅館</div>
-            <div class="detail">
-                交通資訊：可透過巴士或汽車往返維爾紐斯與德魯斯基寧凱。
-            </div>
+            <div class="detail">交通資訊：可透過巴士或汽車往返維爾紐斯與德魯斯基寧凱。</div>
         </div>
-
-        <!-- 推薦景點 -->
         <div class="card type-event">
-            <div class="time-tag">
-                <span class="time">景點推薦</span>
-                <span class="badge badge-event">Sightseeing</span>
-            </div>
+            <div class="time-tag"><span class="time">景點推薦</span><span class="badge badge-event">Sightseeing</span></div>
             <div class="title">德魯斯基寧凱探索</div>
             <div class="detail">
                 <p>📍 <a href="https://maps.app.goo.gl/CpwbmuCan9u5xmt59?g_st=ic" target="_blank" style="color: #28a745; text-decoration: none; font-weight: bold;">Snow Arena 室内滑雪場</a></p>
                 <p>📍 <a href="https://maps.app.goo.gl/b6RbDzU9Fguiw5rr8?g_st=ic" target="_blank" style="color: #28a745; text-decoration: none; font-weight: bold;">Druskininkai 水上樂園</a></p>
             </div>
         </div>
-
-        <!-- 美食筆記 -->
         <div class="card type-event">
-            <div class="time-tag">
-                <span class="time">美食必吃</span>
-                <span class="badge badge-event">Lithuanian Cuisine</span>
-            </div>
+            <div class="time-tag"><span class="time">美食必吃</span><span class="badge badge-event">Lithuanian Cuisine</span></div>
             <div class="title">立陶宛特色料理清單</div>
             <div class="detail">
-                <p>🥟 <b>Cepelinai (馬鈴薯肉圓)：</b>形似飛船，Q彈馬鈴薯皮包碎肉/起司。</p>
-                <p>🥣 <b>Šaltibarščiai (粉紅甜菜根冷湯)：</b>招牌鮮豔色澤，配熱馬鈴薯吃。</p>
-                <p>🥞 <b>Bulviniai Blynai (馬鈴薯煎餅)：</b>焦脆餅皮搭配酸奶醬。</p>
-                <p>🥐 <b>Kibinai (卡拉伊派餡餅)：</b>薄皮肉餡餅，口感香脆。</p>
-                <p>🥬 <b>Balandėliai (捲心菜捲)：</b>高麗菜包肉餡，燉煮入味。</p>
-                <p>🍰 <b>Tinginys (懶人蛋糕)：</b>可可餅乾製成的無烘焙甜點。</p>
+                <p>🥟 <b>Cepelinai：</b>馬鈴薯肉圓。🥣 <b>Šaltibarščiai：</b>粉紅甜菜根冷湯。🥞 <b>煎餅。</b> croissants 🥐 <b>Kibinai：</b>餡餅。</p>
             </div>
         </div>
     </div>
-
 
     <!-- 6/14 -->
     <div id="d614" class="day-section">
@@ -186,9 +149,9 @@
 
     <!-- 6/15 -->
     <div id="d615" class="day-section">
-        <div class="day-header">6月15日 (週一) 維爾紐斯 (VNO) → 米蘭 </div>
+        <div class="day-header">6月15日 (週一) 維爾紐斯 (VNO) → 米蘭</div>
         <div class="card type-accom">
-            <div class="time-tag"><span class="time">12:00 前 check out</span><span class="badge badge-accom">退房</span></div>
+            <div class="time-tag"><span class="time">12:00 前</span><span class="badge badge-accom">退房</span></div>
             <div class="title">德魯斯基寧凱 (Druskininkai)</div>
             <div class="detail">結束比賽行程，準備前往機場。</div>
         </div>
@@ -198,13 +161,12 @@
             <div class="detail">Wizz Air | 21:15 抵達米蘭馬爾彭薩機場 T1</div>
         </div>
         <div class="card type-accom">
-            <div class="time-tag"><span class="time">抵達米蘭 ✈️ 14:00 後入住</span><span class="badge badge-accom">Airbnb</span></div>
+            <div class="time-tag"><span class="time">14:00 後入住</span><span class="badge badge-accom">Airbnb</span></div>
             <div class="title">洛納泰波佐洛 (Lonate Pozzolo)</div>
             <div class="address">Via Matteotti, 8</div>
             <div class="detail">房東：Carlo | 退房：6/16 10:00</div>
         </div>
     </div>
-
 
     <!-- 6/16 -->
     <div id="d616" class="day-section">
@@ -222,110 +184,75 @@
         </div>
     </div>
 
-    <!-- 6/17 行程區塊 -->
-<div id="d617" class="day-section">
-    <div class="day-header">6月17日 (週三) | 巴黎</div>
-
-    <div class="card type-event">
-        <div class="time-tag">
-            <span class="time">15:00</span>
-            <span class="badge badge-event">羅浮宮參觀</span>
-        </div>
-        <div class="title">Louvre Museum 羅浮宮</div>
-        
-        <div class="detail">
-            <p><b>入場票券 (QR Codes):</b></p>
-            <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
-                
-                <!-- 這裡就是放置 src 的地方 -->
-                <div style="text-align: center;">
-                    <img src="image_14.png" alt="Wei Xiang Zhang QR" style="width: 120px; border: 1px solid #ddd; border-radius: 8px;">
-                    <p style="font-size: 10px; margin-top: 5px;">Wei Xiang Zhang</p>
-                </div>
-
-                <div style="text-align: center;">
-                    <img src="image_15.png" alt="Ling Hsiu Tsai QR" style="width: 120px; border: 1px solid #ddd; border-radius: 8px;">
-                    <p style="font-size: 10px; margin-top: 5px;">Ling Hsiu Tsai</p>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-        <!-- 巴黎美食推薦：麵包 -->
+    <!-- 6/17 -->
+    <div id="d617" class="day-section">
+        <div class="day-header">6月17日 (週三) | 巴黎探索 🎨</div>
         <div class="card type-event">
-            <div class="time-tag">
-                <span class="time">美食推薦</span>
-                <span class="badge badge-event">Boulangerie</span>
+            <div class="time-tag"><span class="time">15:00</span><span class="badge badge-event">羅浮宮參觀</span></div>
+            <div class="title">Louvre Museum 羅浮宮</div>
+            <div class="address">📍 <a href="https://maps.app.goo.gl/7rsoUB7X1QPZKkKK8?g_st=ic" target="_blank" style="color: #28a745; text-decoration: none; font-weight: bold;">進場小捷徑 (Porte des Lions)</a></div>
+            <div class="detail">
+                <p><b>入場票券 (QR Codes):</b></p>
+                <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <img src="image_14.png" alt="Wei Xiang Zhang QR" style="width: 120px; border: 1px solid #ddd; border-radius: 8px;">
+                        <p style="font-size: 10px; margin-top: 5px;">Wei Xiang Zhang</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="image_15.png" alt="Ling Hsiu Tsai QR" style="width: 120px; border: 1px solid #ddd; border-radius: 8px;">
+                        <p style="font-size: 10px; margin-top: 5px;">Ling Hsiu Tsai</p>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="card type-event">
+            <div class="time-tag"><span class="time">美食推薦</span><span class="badge badge-event">Boulangerie</span></div>
             <div class="title">🥐 法式經典麵包</div>
             <div class="detail">
                 <ul style="padding-left: 18px; margin: 0;">
-                    <li><b>法式長棍 (Baguette):</b> 外皮酥脆、內部柔軟，有濃郁麥香。</li>
-                    <li><b>可頌 (Croissant):</b> 奶油香氣濃郁，外層酥皮層次分明。</li>
-                    <li><b>巧克力可頌 (Pain au Chocolat):</b> 經典早餐選擇。</li>
-                    <li><b>鄉村麵包 (Pain de Campagne):</b> 較硬實，帶有微酸風味。</li>
-                    <li><b>蘋果派 (Chausson aux Pommes):</b> 酥皮包裹綿密蘋果餡。</li>
+                    <li><b>法式長棍:</b> 外皮酥脆。</li>
+                    <li><b>可頌:</b> 奶油香濃。</li>
+                    <li><b>巧克力可頌。</b></li>
+                    <li><b>鄉村麵包。</b></li>
                 </ul>
             </div>
         </div>
-
-        <!-- 巴黎美食推薦：鹹食 -->
         <div class="card type-event">
-            <div class="time-tag">
-                <span class="time">必吃清單</span>
-                <span class="badge badge-event">Cuisine Française</span>
-            </div>
+            <div class="time-tag"><span class="time">必吃清單</span><span class="badge badge-event">Cuisine Française</span></div>
             <div class="title">🥘 法國經典鹹食</div>
             <div class="detail">
                 <ul style="padding-left: 18px; margin: 0;">
-                    <li><b>法式鹹派 (Quiche):</b> 蛋奶餡香濃，常搭配培根或蔬菜。</li>
-                    <li><b>油封鴨 (Confit de Canard):</b> 鴨腿軟嫩入味，皮脆多汁。</li>
-                    <li><b>法式紅酒燉雞 (Coq au Vin):</b> 燉煮入味，風味醇厚。</li>
-                    <li><b>馬賽魚湯 (Bouillabaisse):</b> 濃厚海鮮湯，搭配烤麵包。</li>
+                    <li><b>法式鹹派:</b> 蛋奶餡香濃。</li>
+                    <li><b>油封鴨:</b> 軟嫩入味。</li>
+                    <li><b>紅酒燉雞。</b></li>
+                    <li><b>馬賽魚湯。</b></li>
                 </ul>
             </div>
         </div>
     </div>
 
     <!-- 6/18 -->
-    <div id="d617" class="day-section"> <!-- 注意：需接續在 6/17 之後 -->
-    </div> <!-- 確保 6/17 結束 -->
-
     <div id="d618" class="day-section">
-        <div class="day-header">6月18日 (週四) | 巴黎地標巡禮 🗼 </div>
-
-        <!-- 凱旋門 -->
+        <div class="day-header">6月18日 (週四) | 巴黎地標巡禮 🗼</div>
         <div class="card type-event">
-            <div class="time-tag">
-                <span class="time">景點探訪 🟦⬜🟥</span>
-                <span class="badge badge-event">Arc de Triomphe</span>
-            </div>
+            <div class="time-tag"><span class="time">景點探訪</span><span class="badge badge-event">Arc de Triomphe</span></div>
             <div class="title">巴黎凱旋門</div>
             <div class="detail">
-                <p>由拿破崙於1806年下令興建，紀念1805年奧斯特利茨戰役中法軍的勝利，彰顯軍事榮耀，於1836年完工。</p>
+                <p>拿破崙於1806下令興建，紀念奧斯特利茨戰役勝利。</p>
                 <ul style="padding-left: 18px; margin: 0;">
-                    <li><b>建築設計：</b>仿古羅馬提圖斯凱旋門，高50公尺、寬45公尺。</li>
-                    <li><b>歷史記錄：</b>表面刻有 660 名將領名字與 158 場戰役名稱。</li>
-                    <li><b>地標意義：</b>座落於戴高樂廣場中心，12條街道以此為中心呈放射狀延伸。</li>
+                    <li><b>設計：</b>高50公尺、寬45公尺。</li>
+                    <li><b>記錄：</b>刻有660位將領名字。</li>
                 </ul>
             </div>
         </div>
-
-        <!-- 巴黎鐵塔 -->
         <div class="card type-event">
-            <div class="time-tag">
-                <span class="time">景點探訪 🟦⬜🟥 </span>
-                <span class="badge badge-event">Eiffel Tower</span>
-            </div>
-            <div class="title">巴黎鐵塔 (Eiffel Tower)</div>
+            <div class="time-tag"><span class="time">景點探訪</span><span class="badge badge-event">Eiffel Tower</span></div>
+            <div class="title">巴黎鐵塔</div>
             <div class="detail">
-                <p>為慶祝1889年世博會及法國大革命100週年而建，由古斯塔夫·艾菲爾設計，歷時2年於1889年落成。</p>
+                <p>1889年世博會紀念建築。</p>
                 <ul style="padding-left: 18px; margin: 0;">
-                    <li><b>興建宗旨：</b>展示工業技術結晶，採用金屬鏤空結構，歷時2年2個月又5天完工。</li>
-                    <li><b>初期爭議：</b>曾被視為破壞市容的「巨型煙囪」，原定20年後（1909年）拆除。</li>
-                    <li><b>身份轉變：</b>因具備無線電通信價值被保留，最終成為世界遺產與法國象徵。</li>
+                    <li><b>背景：</b>古斯塔夫·艾菲爾設計。</li>
+                    <li><b>身份：</b>世界遺產與法國象徵。</li>
                 </ul>
             </div>
         </div>
@@ -333,18 +260,18 @@
 
     <!-- 6/21 -->
     <div id="d621" class="day-section">
-        <div class="day-header">6月21日 (週日)</div>
+        <div class="day-header">6月21日 (週日) 前往比利時 🇧🇪</div>
         <div class="card type-accom">
-            <div class="time-tag"><span class="time">前往布魯塞爾</span><span class="badge badge-accom">Airbnb</span></div>
+            <div class="time-tag"><span class="time">14:00 入住</span><span class="badge badge-accom">Airbnb</span></div>
             <div class="title">聖吉爾 (Saint-Gilles)</div>
             <div class="address">Rue Émile Féron 25</div>
-            <div class="detail">14:00 後入住 | 房東：Michel | 退房：6/23 12:00</div>
+            <div class="detail">房東：Michel | 退房：6/23 12:00</div>
         </div>
     </div>
 
     <!-- 6/23 -->
     <div id="d623" class="day-section">
-        <div class="day-header">6月23日 (週二)</div>
+        <div class="day-header">6月23日 (週二) 歸途 ✈️</div>
         <div class="card type-flight">
             <div class="time-tag"><span class="time">13:30</span><span class="badge badge-flight">航班 TG935</span></div>
             <div class="title">布魯塞爾 (BRU) → 曼谷 (BKK)</div>
@@ -360,15 +287,13 @@
 
 <script>
     function showDay(dayId) {
-        // 切換內容顯示
         document.querySelectorAll('.day-section').forEach(section => section.classList.remove('active'));
-        document.getElementById(dayId).classList.add('active');
+        const target = document.getElementById(dayId);
+        if (target) target.classList.add('active');
         
-        // 切換按鈕狀態
         document.querySelectorAll('.nav-item').forEach(btn => btn.classList.remove('active'));
-        event.target.classList.add('active');
+        if (event && event.target) event.target.classList.add('active');
         
-        // 自動捲動到頂部
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
